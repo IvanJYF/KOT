@@ -1,0 +1,169 @@
+
+#content{/*主体内容*/
+    width:1810px;
+    height: 91%;
+    background: #edeff5;
+    position: relative;
+}
+
+/*添加按钮*/
+#stu-add{
+    position: absolute;
+    right: 30px;
+    top:20px;
+}
+/*学员列表*/
+.stu-list{
+    width: 1646px;
+    margin: 0 auto;
+    margin-top: 34px;
+}
+
+.stu-list>li{
+    width:365px;
+    background: white;
+    height: 130px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    float: left;
+}
+.stu-list>li.active{background: rgba(201,201,201,0.3);}
+.stu-list .head-img{
+    float: left;
+    height:130px;
+    width:130px;
+}
+.stu-list .head-img div{
+    width:48px;
+    height:48px;
+    background: url("../img/camp/stu.png") no-repeat center;
+    background-color: #50c14e;
+    border-radius: 50%;
+    margin-top: 17px;
+    margin-left: 33px;
+
+}
+.stu-list .stu{
+    float: left;
+    height: 130px;
+    width: 235px;
+}
+
+.stu-list .stu .stu-info{
+    margin-top: 18px;
+}
+.stu-list .stu .stu-info span:first-child{margin-right: 30px}
+.stu-list .stu .stu-control{margin-top: 34px}
+.stu-list .stu .stu-control button{
+    margin-right:28px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/*分页*/
+#page{
+    width: 368px;
+    position: absolute;
+    /*top:-20px;*/
+    bottom:30px;
+    left: 50%;
+    margin-left: -134px;
+}
+.pageList li{
+    float: left;
+    border: solid 1px #c9c9c9;
+    padding: 0 15px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+
+}
+.pageList li.active{background:#5093e1;}
+.pageList li.disable{background:#c9c9c9;}
+.pageList li.active a{color: white;}
+.pageList li.disable a{color:#AEAEAE}
+/*学生表单*/
+.stu-form{
+    height: 0;
+    overflow: hidden;
+    width: 550px;
+    background: white;
+    position: absolute;
+    right: 0;
+    top:0;
+    transition: height .3s linear;
+}
+.stu-form.showlist{height: 852px;}
+.stu-form>h1{
+    text-align: center;
+    height: 84px;
+    line-height: 84px;
+    border: solid 2px #edeff5;
+    box-sizing: border-box;
+}
+.stu-form ul{margin-top: 30px}
+.stu-form ul>li{
+    width: 462px;
+    height:40px;
+    line-height: 40px;
+    background: #fbfbfb;
+    border: solid 1px #dcdfe6;
+    border-radius: 10px;
+    margin: 0 auto 15px auto;
+}
+.stu-form ul>li>label{
+    display: inline-block;
+    margin-left: 18px;
+    margin-right: 110px;
+    font-size: 18px;
+}
+.stu-form ul>li>input,.stu-form ul>li>select{
+    width:250px;
+    font-size: 18px;
+    border: none;
+    outline:none;
+    background: #fbfbfb;
+}
+.stu-form ul>li>select{
+    appearance:none;
+    -moz-appearance:none;    /*for firefox*/
+    -webkit-appearance:none;    /*for chrome*/
+    background: url("../img/admin/doperator.png") no-repeat right;
+}
+.stu-form .errMsg{width:462px;margin: 0 auto;color: red;}
+.form-control{
+    width: 462px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+.form-control button{
+    width: 127px;
+    height:46px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+.form-control button.disable{
+    background-color: #e6e8ee;
+    cursor: url("../img/camp/aero_unavail.cur"),auto;
+}
+.form-control button.usable{
+    background-color: #50c14e;
+    cursor: pointer;
+}
+.form-control button.usable:hover{
+    background-color: #50B44E;
+}
+.form-control button.usable:active{
+    background-color: #4D994C;
+}
+.stu-form .close{
+    position: absolute;
+    bottom:0;
+    right: 14px;
+}

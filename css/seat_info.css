@@ -1,0 +1,260 @@
+/*选班级*/
+.class-change{margin-left: 28px;margin-top: 20px}
+#content:before{
+    content: "";
+    display: table;
+}
+.class-change>li{
+    float: left;
+    width: 70px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 50px;
+
+}
+.class-change a{color: #313131;}
+.class-change>li.active{border-bottom: solid 4px #5093e1;}
+
+#content:before{content: "";display: table;}
+
+
+/*学生表单*/
+.stu-form{
+    height: 800px;
+    width: 650px;
+    background: #edeff5;
+    /*background: white;*/
+    position: absolute;
+    right: 100px;
+    top:0px;
+    display: none;
+    z-index: 9;
+}
+.stu-form>h2{
+    text-align: center;
+    height: 84px;
+    line-height: 84px;
+    box-sizing: border-box;
+}
+.stu-form ul{margin-top: 30px}
+.stu-form ul>li{
+    width: 462px;
+    height:40px;
+    line-height: 40px;
+    background: #fbfbfb;
+    border: solid 1px #dcdfe6;
+    border-radius: 10px;
+    margin: 0 auto 15px auto;
+    position: relative;
+}
+.stu-form ul>li>label{
+    display: inline-block;
+    margin-left: 18px;
+    margin-right: 110px;
+    font-size: 18px;
+}
+.stu-form ul>li>input,.stu-form ul>li>select{
+    width:250px;
+    font-size: 18px;
+    border: none;
+    outline:none;
+    background: #fbfbfb;
+}
+.stu-form ul>li>select{
+    appearance:none;
+    -moz-appearance:none;    /*for firefox*/
+    -webkit-appearance:none;    /*for chrome*/
+    background: url("../img/admin/doperator.png") no-repeat right;
+}
+.stu-form ul>li span.sform-msg{
+    position: absolute;right:-144px;
+    display: inline-block;
+    width:140px;
+}
+.form-control{
+    width: 462px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+.form-control button{
+    width: 127px;
+    height:46px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+.form-control button.disable{
+    background-color: #e6e8ee;
+    cursor: url("../img/camp/aero_unavail.cur"),auto;
+}
+.form-control button.usable{
+    background-color: #50c14e;
+    cursor: pointer;
+}
+.form-control button.usable:hover{
+    background-color: #50B44E;
+}
+.form-control button.usable:active{
+    background-color: #4D994C;
+}
+
+/*班级信息*/
+.class-Info{
+    height: 500px;
+    width: 650px;
+    background: #edeff5;
+    /*background: white;*/
+    position: absolute;
+    right: 100px;
+    top:80px;
+}
+.class-Info ul{margin-top: 30px}
+.class-Info ul>li{
+    width: 362px;
+    height:40px;
+    line-height: 40px;
+    background: #fbfbfb;
+    border: solid 1px #dcdfe6;
+    border-radius: 10px;
+    margin: 0 auto 15px auto;
+    position: relative;
+    text-align: center;
+}
+.class-Info>h2{
+    text-align: center;
+    height: 84px;
+    line-height: 84px;
+    box-sizing: border-box;
+}
+
+/*座位表*/
+.seat-table{
+    width:940px;
+    height:550px;
+    margin-top: 130px;
+    border-right: solid 1px white;
+}
+.seat-table>.desk{
+    text-align: center;
+    width:100px;
+    height:30px;
+    line-height: 30px;
+    background: #c9c9c9;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.seats{
+    width:663px;
+    margin: 0 auto;
+    margin-top: 76px;
+}
+.seats li{
+    width: 111px;
+    height:38px;
+    background: url("../img/camp/garyseat.png") no-repeat 8px;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-left: 10px;
+    padding-left:50px;
+}
+.seats li p{
+    font-size: 14px;
+    text-align: center;
+}
+.seats li.checked{
+    background: url("../img/camp/greanseat.png") no-repeat 8px;
+    background-color: white;
+}
+.seats li.dStu{
+    background: url("../img/camp/redseat.png") no-repeat 8px;
+    background-color: white;
+}
+.seats-1 .center{
+    margin-left: 40px;
+}
+.seats-2 .center{
+    margin-right: 36px;
+}
+.explain{
+    position: relative;
+    top:100px;
+    left:500px;
+}
+.explain div{
+    display: inline-block;
+    margin-right: 20px;
+}
+.explain img{
+    vertical-align: middle;
+}
+
+/*预定框*/
+.dialog{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 1920px;
+    height:100%;
+    background: rgba(0,0,0,0);
+    display: none;
+}
+.bookSit:before{
+    content: "";
+    display: table;
+}
+.bookSit{
+    width:500px;
+    height:300px;
+    background: white;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    margin-top: -150px;
+    border-radius: 50px;
+}
+.bookSit:before{
+    content: "";
+    display: table;
+}
+.bookSit h3{margin-top: 50px}
+.bookSit select{
+    width:300px;
+    height: 40px;
+    padding-left:10px;
+    background-color: #fbfbfb;
+    border-radius: 10px;
+    margin: 35px 0 50px 0;
+    outline: none;
+}
+.bookSit select{
+    appearance:none;
+    -moz-appearance:none;    /*for firefox*/
+    -webkit-appearance:none;    /*for chrome*/
+    background: url("../img/admin/doperator.png") no-repeat 270px;
+}
+.bookSit button{
+    width:100px;
+    height:40px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: #000;
+
+}
+.bookSit .booking{
+    background: #5093e1;
+    margin-right: 50px;
+}
+.bookSit .close{
+    background: #c9c9c9;
+    margin-left: 50px;
+}

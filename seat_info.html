@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width,initial-scale=1">-->
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/seat_info.css">
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="main clear">
+    <nav class="side-nav">
+        <ul>
+            <li class="active">
+                <a href="camp_manager.html"><img src="img/camp/booking.png" title="预定管理"></a>
+            </li>
+        </ul>
+    </nav>
+    <div id="containter">
+        <header id="header">
+            <ul class="content-tab clear">
+                <li class="active">订座管理</li>
+            </ul>
+            <div class="header-right clear">
+
+                <div class="userInfo">
+                    <img src="img/camp/ad.png">
+                    <span>管理员</span>
+                </div>
+                <div class="exit">
+
+                </div>
+            </div>
+        </header>
+        <div id="content">
+            <!--结果提示-->
+            <div class="tips"></div>
+            <div class="seat-table">
+                <div class="desk">前</div>
+                <ul class="seats">
+                    <li>
+                        <p>空</p>
+                        <p>闲</p>
+                    </li>
+                    <li>
+                        <p>空</p>
+                        <p>闲</p>
+                    </li>
+                    <li class="center">
+                        <p>空</p>
+                        <p>闲</p>
+                    </li>
+                    <li>
+                        <p>空</p>
+                        <p>闲</p>
+                    </li>
+                    <li>
+                        <p>空</p>
+                        <p>闲</p>
+                    </li>
+                    <li>
+                        <p>空</p>
+                        <p>闲</p>
+                    </li>
+                    <li>
+                        <p>空</p>
+                        <p>闲</p>
+                    </li>
+                    <li class="center">
+                        <p>空</p>
+                        <p>闲</p>
+                    </li>
+                    <li>
+                        <p>空</p>
+                        <p>闲</p>
+                    </li>
+                    <li>
+                        <p>空</p>
+                        <p>闲</p>
+                    </li>
+                    <li>
+                        <p>空</p>
+                        <p>闲</p>
+                    </li>
+                    <li>
+                        <p>空</p>
+                        <p>闲</p>
+                    </li>
+                    <li class="center">
+                        <p>空</p>
+                        <p>闲</p>
+                    </li>
+                    <li>
+                        <p>空</p>
+                        <p>闲</p>
+                    </li>
+                    <li>
+                        <p>空</p>
+                        <p>闲</p>
+                    </li>
+                    <li>
+                        <p>空</p>
+                        <p>闲</p>
+                    </li>
+                    <li>
+                        <p>空</p>
+                        <p>闲</p>
+                    </li>
+                    <li class="center">
+                        <p>空</p>
+                        <p>闲</p>
+                    </li>
+                    <li>
+                        <p>空</p>
+                        <p>闲</p>
+                    </li>
+                    <li>
+                        <p>空</p>
+                        <p>闲</p>
+                    </li>
+                    <li>
+                        <p>空</p>
+                        <p>闲</p>
+                    </li>
+                    <li>
+                        <p>空</p>
+                        <p>闲</p>
+                    </li>
+                    <li class="center">
+                        <p>空</p>
+                        <p>闲</p>
+                    </li>
+                    <li>
+                        <p>空</p>
+                        <p>闲</p>
+                    </li>
+                    <li>
+                        <p>空</p>
+                        <p>闲</p>
+                    </li>
+
+                </ul>
+                <div class="explain">
+                    <div><img src="img/camp/greanseat.png"> 已 订</div>
+                    <div><img src="img/camp/garyseat.png"> 空 座</div>
+                    <div><img src="img/camp/redseat.png"> D类型学员</div>
+                </div>
+            </div>
+            <div class="stu-form">
+                <h2>学员信息</h2>
+                <form id="sForm">
+                    <ul>
+                        <li>
+                            <label for="sname">学员姓名</label>
+                            <input type="text" id="sname" name="sname" placeholder="请输入姓名">
+                            <span class="sform-msg"></span>
+                        </li>
+                        <li>
+                            <label for="steacher">顾问老师</label>
+                            <input type="text" id="steacher" name="steacher" placeholder="请输入顾问老师姓名">
+                            <span class="sform-msg"></span>
+                        </li>
+                        <li>
+                            <label for="stype">学员类型</label>
+                            <select name="stype" id="stype">
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="educ">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;历</label>
+                            <input type="text" id="educ" name="educ" placeholder="请输入学历">
+                            <span class="sform-msg"></span>
+                        </li>
+                        <li>
+                            <label for="major">专&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业</label>
+                            <input type="text" id="major" name="major" placeholder="请输入专业">
+                            <span class="sform-msg"></span>
+                        </li>
+                        <li>
+                            <label for="basic">专业基础</label>
+                            <input type="text" id="basic" name="basic" placeholder="请输入专业基础">
+                            <span class="sform-msg"></span>
+                        </li>
+                        <li>
+                            <label for="msgSource">信息来源</label>
+                            <select name="msgSource" id="msgSource">
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="current">目前情况</label>
+                            <input type="text" id="current" name="current" placeholder="请输入目前情况">
+                            <span class="sform-msg"></span>
+                        </li>
+                        <li>
+                            <label for="dutatiom">学习时长</label>
+                            <input type="text" id="dutatiom" name="dutatiom" placeholder="请输入学习时长">
+                            <span class="sform-msg"></span>
+                        </li>
+                        <li>
+                            <label for="stage">学习阶段</label>
+                            <select name="stage" id="stage">
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                            </select>
+                        </li>
+                    </ul>
+                </form>
+                <div class="form-control">
+                    <button class="usable update">
+                        <img src="img/camp/finishbg.png" title="更新">
+                    </button>
+
+                    <button class="cancel">
+                        <img src="img/camp/delbg.png" title="取消订座">
+                    </button>
+                </div>
+            </div>
+            <div class="class-Info">
+                <h2>班级信息</h2>
+                <ul>
+                    <li>班级名称</li>
+                    <li>项目经理</li>
+                    <li>班级人数</li>
+                    <li>创建时间</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="dialog">
+        <div class="bookSit">
+            <h3>请选择</h3>
+            <select>
+                <option value="">学生姓名</option>
+                <option value="">学生姓名</option>
+                <option value="">学生姓名</option>
+            </select>
+            <br>
+            <button class="booking">预定</button>
+            <button class="close">关闭</button>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/seat.js"></script>
+</html>

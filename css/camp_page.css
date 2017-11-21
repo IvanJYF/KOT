@@ -1,0 +1,58 @@
+#content:before{content: "";display: table;}
+/*学员列表*/
+.camp-info{
+    width: 1550px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+.camp-info>li{
+    background: white;
+    width:450px;
+    height: 200px;
+    margin-bottom: 40px;
+    float: left;
+    margin-left: 40px;
+    color: white;
+}
+.camp-info>li.java{
+    background: url("../img/camp/java.png") no-repeat;
+}
+.camp-info>li.web{
+    background: url("../img/camp/web.png") no-repeat;
+}
+.camp-info>li.ui{
+    background: url("../img/camp/ui.png") no-repeat;
+}
+.camp-info>li .intro{
+    text-align: center;
+    width: 200px;
+    position: relative;
+    left: 200px;
+    top: 50%;
+    margin-top: -36px;
+    font-size: 24px;
+}
+/*分页*/
+#page{
+    width: 368px;
+    position: absolute;
+    /*top:-10px;*/
+    bottom:30px;
+    left: 50%;
+    margin-left: -134px;
+}
+.pageList li{
+    float: left;
+    border: solid 1px lightblue;
+    padding: 0 15px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+
+}
+.pageList li.active{background:#5093e1;}
+.pageList li.disable{background:#c9c9c9;}
+.pageList li.active a{color: white;}
+.pageList li.disable a{color:#AEAEAE}
+

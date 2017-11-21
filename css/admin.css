@@ -1,0 +1,195 @@
+#header .content-tab li:nth-child(2){width:160px;margin-right: 20px}
+#content{background: white}
+.addInfo{
+    width: 520px;
+    height:775px;
+    float: left;
+    border: solid 1px #e2e2e2;
+}
+.addInfo .addHead{
+    width: 520px;
+    height:92px;
+    line-height: 92px;
+    border-bottom:solid 1px #e2e2e2;
+}
+.addInfo .addHead h2{
+    text-align: center;
+}
+
+.user-form {margin-top: 30px}
+.user-form li{
+    width: 462px;
+    height:40px;
+    line-height: 40px;
+    background: #fbfbfb;
+    border: solid 1px #dcdfe6;
+    border-radius: 10px;
+    margin: 0 auto 15px auto;
+}
+.user-form li>label{
+    display: inline-block;
+    margin-left: 18px;
+    margin-right: 110px;
+    font-size: 18px;
+}
+.user-form li>input,.user-form li>select{
+    width:250px;
+    font-size: 18px;
+    border: none;
+    outline:none;
+    background: #fbfbfb;
+}
+.user-form li>select{
+    appearance:none;
+    -moz-appearance:none;    /*for firefox*/
+    -webkit-appearance:none;    /*for chrome*/
+    background: url("../img/admin/doperator.png") no-repeat right;
+}
+
+.user-form>li.add-control{
+    text-align: right;
+    background: none;
+    border: none;
+    margin-top: 50px;
+}
+.add-control button{
+    width: 35px;
+    height:35px;
+    background: url("../img/admin/finish.png") no-repeat center;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
+.user-form>li.errMsg{
+    border: none;
+    background: white;
+    color: red;
+    text-align: center;
+}
+/*用户信息框*/
+.user-table{
+    width: 1285px;
+    height:775px;
+    float: left;
+    border: solid 1px #e2e2e2;
+    position: relative;
+}
+.user-table table{
+    width: 1145px;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+    margin-top: 50px;
+}
+.user-table table tr{
+    background: #edeff5;
+}
+.user-table table thead>tr:first-child{background: white}
+.user-table table th,.user-table table td{height: 38px;text-align: center}
+.user-table .tab-title{
+    text-align: left;
+    font-size: 24px;
+}
+.user-table table tbody tr.active{
+    background: #5093e1;
+}
+.user-table table tbody tr:hover{
+    background: #5093e1;
+}
+/*管理按钮*/
+.user-table .tab-control{
+    text-align: right;
+}
+.user-table .tab-control button{
+    width: 36px;
+    height:36px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.user-table .tab-control .user-submit{
+    background: url("../img/admin/finish.png") no-repeat center;
+}
+.user-table .tab-control .user-edit{
+    background: url("../img/admin/edit.png") no-repeat center;
+}
+.user-table .tab-control .user-del{
+    background: url("../img/admin/del.png") no-repeat center;
+}
+/*多选按钮*/
+.user-table input[type=checkbox]{
+
+}
+.user-table tbody input[type=checkbox]{
+    position: relative;
+    left: 16px;
+}
+/*分页*/
+#page{
+    width: 446px;
+    position: absolute;
+    /*top:-20px;*/
+    bottom:30px;
+    left: 50%;
+    margin-left: -223px;
+}
+.pageList li{
+    float: left;
+    border: solid 1px #e2e2e2;
+    padding: 0 25px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+
+}
+.pageList li.active{background:#5093e1;}
+.pageList li.disable{background:#c9c9c9;}
+.pageList li.active a{color: white;}
+.pageList li.disable a{color:#AEAEAE}
+/*删除模态框*/
+.dialog{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 1920px;
+    height:100%;
+    background: rgba(0,0,0,0.3);
+    display: none;
+}
+.dialog .delBox{
+    width: 400px;
+    height:200px;
+    margin: 0 auto;
+    position: relative;
+    top:50%;
+    margin-top: -100px;
+    background: white;
+    border-radius: 20px;
+    text-align: center;
+}
+.dialog .delBox:before{content: "";display: table;}
+.dialog .delBox>div:first-child{
+    margin-top: 30px;
+}
+.dialog .delBox h4{
+    margin-bottom: 16px;
+}
+.dialog .delBox button{
+    width:80px;
+    height:40px;
+    border-radius: 10px;
+    border: none;
+    outline:none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+.dialog #delBtn{
+    margin-right: 26px;
+}
+.dialog #closeBtn{
+    margin-left: 26px;
+    background: #5093e1;
+}
+

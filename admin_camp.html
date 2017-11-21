@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="main clear">
+    <nav class="side-nav">
+        <div class="logo">
+            <img src="img/logo_sm.png" alt="">
+        </div>
+        <ul>
+            <li>
+                <a href="admin_user.html"><img src="img/admin/user.png" title="用户管理"></a>
+            </li>
+            <li  class="active">
+                <a href="admin_camp.html"><img src="img/admin/camp.png" title="训练营管理"></a>
+            </li>
+            <li>
+                <a href="admin_student.html"><img src="img/admin/stu.png" title="学员管理"></a>
+            </li>
+        </ul>
+    </nav>
+    <div id="containter">
+        <header id="header">
+            <ul class="content-tab clear">
+                <li> <a href="admin_user.html">用户管理</a></li>
+                <li class="active"> <a href="admin_camp.html">训练营管理</a></li>
+                <li> <a href="admin_student.html">学员管理</a></li>
+            </ul>
+            <div class="header-right clear">
+                 <div class="search">
+                     <input type="text" placeholder="搜索" name="kw">
+                 </div>
+                 <div class="userInfo">
+                     <img src="img/camp/ad.png">
+                     <span>管理员</span>
+                 </div>
+                 <div class="exit hL">
+                    
+                 </div>
+             </div>
+        </header>
+        <div id="content" class="clear">
+            <!--结果提示-->
+            <div class="tips"></div>
+            <div class="addInfo">
+                <div class="addHead">
+                    <h2>新建用户</h2>
+                </div>
+                <form id="form">
+                    <ul class="user-form">
+                        <li>
+                            <label for="cid">教室编号</label>
+                            <input type="text"  id="cid" name="cid" placeholder="请输入教室编号">
+                        </li>
+                        <li>
+                            <label for="cteacher">讲师姓名</label>
+                            <input type="text" id="cteacher" name="cteacher" placeholder="请输入讲师姓名">
+                        </li>
+                        <li>
+                            <label for="ctype">产&nbsp;&nbsp;品&nbsp;线</label>
+                            <select  name="ctype" id="ctype">
+                                <option value="UID">UID</option>
+                                <option value="JAVA">JAVA</option>
+                                <option value="WEB">WEB</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="classRoomType">教室类型</label>
+                            <select  name="classRoomType" id="classRoomType">
+                                <option value="1">类型一（3-2）</option>
+                                <option value="2">类型二（2-3）</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="pCount">人&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数</label>
+                            <input type="text" id="pCount" name="pCount" placeholder="请输入班级人数">
+                        </li>
+                        <li>
+                            <label>创建时间</label>
+                            <input type="text" id="date" readonly>
+                        </li>
+                        <li class="errMsg">
+
+                        </li>
+                        <li class="add-control">
+                            <button class="user-add "></button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="user-table">
+                <table align="center">
+                    <thead>
+                        <tr>
+                            <th colspan="5" class="tab-title">全部用户</th>
+                            <th class="tab-control">
+                                <button class="user-edit"></button>
+                                <button class="user-del"></button>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>全选<input id="ckbAll" type="checkbox"></th>
+                            <th>课室编号</th>
+                            <th>讲师姓名</th>
+                            <th>产品线</th>
+                            <th>人数</th>
+                            <th>创建时间</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <tr>
+                            <td><input type="checkbox" name="ckb" value="cid"></td>
+                            <td>17001</td>
+                            <td>张宏杰</td>
+                            <td>WEB</td>
+                            <td>30</td>
+                            <td>2017-10-1</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="ckb" value="cid"></td>
+                            <td>17001</td>
+                            <td>张宏杰</td>
+                            <td>WEB</td>
+                            <td>30</td>
+                            <td>2017-10-1</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="ckb" value="cid"></td>
+                            <td>17001</td>
+                            <td>张宏杰</td>
+                            <td>WEB</td>
+                            <td>30</td>
+                            <td>2017-10-1</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="ckb" value="cid"></td>
+                            <td>17001</td>
+                            <td>张宏杰</td>
+                            <td>WEB</td>
+                            <td>30</td>
+                            <td>2017-10-1</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="ckb" value="cid"></td>
+                            <td>17001</td>
+                            <td>张宏杰</td>
+                            <td>WEB</td>
+                            <td>30</td>
+                            <td>2017-10-1</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <div id="page">
+                    <ul class="pageList clear">
+                        <li class="prev"><a href="1">上一页</a></li>
+                        <li class="active"><a href="1">1</a></li>
+                        <li><a href="2">2</a></li>
+                        <li><a href="3">4</a></li>
+                        <li><a href="4">5</a></li>
+                        <li class="next"><a href="5">下一页</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dialog">
+        <div class="delBox">
+            <div><img src="img/camp/gantan.png"></div>
+            <h4>是否删除该学员</h4>
+            <div>
+                <button id="delBtn">删除</button>
+                <button id="closeBtn">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/admin_camp.js"></script>
+</html>

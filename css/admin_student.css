@@ -1,0 +1,59 @@
+#header .content-tab li:nth-child(2){width:160px;margin-right: 20px}
+#content{background: white}
+/*用户信息框*/
+.user-table{
+    width: 1485px;
+    margin: 0 auto;
+    height:775px;
+    border: solid 1px #e2e2e2;
+    position: relative;
+}
+.user-table table{
+    width: 1345px;
+    border-collapse: separate;
+    border-spacing: 0 16px;
+    margin-top: 50px;
+}
+.user-table table tr{
+    background: #edeff5;
+}
+.user-table table thead>tr:first-child{background: white}
+.user-table table th,.user-table table td{height: 38px;text-align: center}
+.user-table .tab-title{
+    text-align: left;
+    font-size: 24px;
+}
+.user-table table tbody tr:hover{
+    background: #5093e1;
+}
+
+/*多选按钮*/
+.user-table input[type=checkbox]{
+
+}
+.user-table tbody input[type=checkbox]{
+    position: relative;
+    left: 16px;
+}
+/*分页*/
+#page{
+    width: 446px;
+    position: absolute;
+    /*top:-20px;*/
+    bottom:30px;
+    left: 50%;
+    margin-left: -223px;
+}
+.pageList li{
+    float: left;
+    border: solid 1px lightblue;
+    padding: 0 25px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+
+}
+.pageList li.active{background:#5093e1;}
+.pageList li.disable{background:#c9c9c9;}
+.pageList li.active a{color: white;}
+.pageList li.disable a{color:#AEAEAE}
