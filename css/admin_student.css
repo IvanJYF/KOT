@@ -2,26 +2,26 @@
 #content{background: white}
 /*用户信息框*/
 .user-table{
-    width: 1485px;
+    width: 80%;
     margin: 0 auto;
-    height:775px;
+    height:96%;
     border: solid 1px #e2e2e2;
     position: relative;
 }
 .user-table table{
-    width: 1345px;
+    width: 96%;
     border-collapse: separate;
     border-spacing: 0 16px;
-    margin-top: 50px;
+    margin-top: 2%;
 }
 .user-table table tr{
     background: #edeff5;
 }
 .user-table table thead>tr:first-child{background: white}
-.user-table table th,.user-table table td{height: 38px;text-align: center}
+.user-table table th,.user-table table td{padding: 0.4% 0;text-align: center}
 .user-table .tab-title{
     text-align: left;
-    font-size: 24px;
+    font-size: 1em;
 }
 .user-table table tbody tr:hover{
     background: #5093e1;
