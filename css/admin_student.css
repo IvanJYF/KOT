@@ -37,19 +37,17 @@
 }
 /*分页*/
 #page{
-    width: 446px;
+    width: 50%;
     position: absolute;
     /*top:-20px;*/
-    bottom:30px;
+    bottom:2%;
     left: 50%;
     margin-left: -223px;
 }
 .pageList li{
     float: left;
     border: solid 1px lightblue;
-    padding: 0 25px;
-    height:40px;
-    line-height: 40px;
+    padding: 2% 5%;
     text-align: center;
 
 }

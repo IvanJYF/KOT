@@ -13,7 +13,7 @@
     loadpage();
 
     //阻止a默认行为
-    pedA();
+   // pedA();
 
     //多选框
     $("#ckbAll").change(function () {
